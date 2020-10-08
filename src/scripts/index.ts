@@ -1,11 +1,15 @@
 import P5 from 'p5';
+import Board from './modules/board';
+
+let board: Board;
 
 const sketch = (p5: P5) => {
   p5.setup = () => {
-    p5.createCanvas(400, 400);
+    p5.createCanvas(672, 864);
+    board = Board.getInstance(p5);
   };
   p5.draw = () => {
-    p5.background(0);
+    board.display();
   };
 };
 
