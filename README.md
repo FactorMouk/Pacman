@@ -1,2 +1,2 @@
 # Pacman
-Um simples jogo de Pacman feito com p5.js
+A simple Pacman game made with p5.js
